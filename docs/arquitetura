@@ -46,13 +46,49 @@ A arquitetura proposta segue o padrão **Cliente-Servidor** dividido em três ca
 
 ---
 
+### b) Componentes do Sistema
+- Autenticação e autorização de usuários.  
+- Cadastro e gerenciamento de usuários (ONGs, protetores e tutores).  
+- Cadastro e gerenciamento de gatos disponíveis para adoção.  
+- Painel administrativo para controle de solicitações e status dos animais.  
+
+### c) Decisões Técnicas
+1. **Frontend Web com Bootstrap**  
+   - Escolhido pela **leveza**, **baixo nível de complexidade** e **curva de aprendizado reduzida**.  
+   - Oferece componentes prontos e responsivos, facilitando a criação de telas de cadastro, listagens e formulários.  
+   - Permite que o desenvolvimento se concentre mais na lógica do sistema do que no design visual.  
+
+2. **PWAs para Mobile**  
+   - Optou-se por **Progressive Web Apps** pela facilidade de portar um site responsivo para dispositivos móveis.  
+   - Evita custos e complexidade do desenvolvimento de apps nativos.  
+   - Garante instalação no celular, acesso offline básico e notificações push no futuro.  
+
+3. **Backend em PHP (CodeIgniter 4)**  
+   - PHP foi escolhido por sua **ampla documentação**, **baixo custo de hospedagem** e **familiaridade da equipe**.  
+   - O framework **CodeIgniter 4** traz organização em MVC (Model-View-Controller), facilitando manutenção e escalabilidade.  
+   - Suporte integrado a rotas, middlewares e APIs REST simplifica a comunicação entre frontend e backend.  
+
+4. **Banco de Dados MySQL**  
+   - Selecionado pela **consistência**, **estabilidade** e **amplo suporte em comunidades**.  
+   - A equipe já possui conhecimento prévio em sua modelagem e utilização.  
+   - Permite fácil integração com o CodeIgniter e suporte a **consultas relacionais** para gerenciar usuários, animais e adoções.  
+
+5. **APIs REST**  
+   - Definidas como padrão de comunicação entre frontend e backend.  
+   - Facilitam integração futura com outros sistemas como abrigos parceiros, plataformas governamentais.  
+   - Seguem boas práticas de modularidade e desacoplamento.  
+
+6. **Controle de Versão (GitHub)**  
+   - Utilização do **GitHub** para versionamento, colaboração em equipe.  
+   - Permite registro histórico do projeto e facilita revisões de código.  
+
 ## 🔄 Fluxo Simplificado
 1. Usuário acessa a plataforma.  
 2. Faz login ou cria cadastro.  
 3. ONG cadastra gatos disponíveis.  
 4. Tutor busca animais e envia uma solicitação de adoção.  
 5. ONG recebe e analisa a solicitação.  
-6. Sistema atualiza automaticamente o status do animal (disponível, em análise, adotado).  
+6. Sistema atualiza automaticamente o status do animal.  
 
 ---
 
