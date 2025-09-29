@@ -1,4 +1,4 @@
-# 🔗 Endpoints previstos
+# Endpoints previstos
 
 - POST /auth/login - autenticação de usuários.  
 - POST /usuarios - cadastro de novos usuários (tutor, ONG, administrador).  
