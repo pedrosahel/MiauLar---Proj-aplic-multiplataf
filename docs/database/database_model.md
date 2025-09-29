@@ -17,10 +17,7 @@
 ## 📊 Diagrama ER (Mermaid)
 
 erDiagram
-    USUARIO ||--o{ GATO : "cadastra"
-    USUARIO ||--o{ SOLICITACAO : "envia"
-    GATO ||--o{ SOLICITACAO : "recebe"
-
+   
     USUARIO {
         int id PK
         string nome
@@ -45,6 +42,11 @@ erDiagram
         int id_gato FK
         string status
     }
+    
+    USUARIO ||--o{ GATO : "cadastra"
+    USUARIO ||--o{ SOLICITACAO : "envia"
+    GATO ||--o{ SOLICITACAO : "recebe"
+
 
 # 📖 Dicionário de Dados  
 
