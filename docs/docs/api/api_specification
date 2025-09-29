@@ -1,6 +1,6 @@
 ## 🔗 Endpoints previstos
 
-- POST /auth/login** - autenticação de usuários.  
+- POST /auth/login - autenticação de usuários.  
 - POST /usuarios** - cadastro de novos usuários (tutor, ONG, administrador).  
 - GET /usuarios/{id}** - retorna informações de um usuário específico.  
 - POST /gatos** - cadastro de um novo gato (apenas ONG/protetor).  
