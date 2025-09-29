@@ -37,7 +37,7 @@ A arquitetura proposta segue o padrão **Cliente-Servidor** dividido em três ca
   - Atualizar o status dos animais no banco de dados.  
 - Implementação de **APIs REST**, que conectam o frontend ao backend.  
 
-### 3. Camada de Dados
+### 3. Banco de dados
 - Banco de dados relacional MySQL, responsável por armazenar:  
   - Informações de usuários.  
   - Perfis de ONGs e tutores.  
